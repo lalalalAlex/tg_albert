@@ -1,7 +1,7 @@
 import telebot
 import buttons
 
-bot = telebot.TeleBot('6720495897:AAG6XPI9muh2d52afJLTkByYQH4ektLq6hw')
+bot = telebot.TeleBot('')
 
 
 @bot.message_handler(commands=['start'])
