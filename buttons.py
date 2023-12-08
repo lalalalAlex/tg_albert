@@ -80,3 +80,15 @@ def choice_5():
     buttons.add(try_, back)
 
     return buttons
+
+
+def choice_0():
+    buttons = InlineKeyboardMarkup(row_width=2)
+    bez = InlineKeyboardButton(text='Без контекста', callback_data='not_1')
+    c = InlineKeyboardButton(text='С контекстом', callback_data='with_1')
+    back = InlineKeyboardButton(text='Назад', callback_data='back')
+
+    buttons.add(bez, c)
+    buttons.row(back)
+
+    return buttons
